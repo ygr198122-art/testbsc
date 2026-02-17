@@ -122,7 +122,9 @@ export type Database = {
         Row: {
           address_line1: string
           address_line2: string | null
+          awb_code: string | null
           city: string
+          courier_name: string | null
           created_at: string
           email: string
           first_name: string
@@ -132,9 +134,16 @@ export type Database = {
           order_number: string
           order_type: string
           payment_method: string
+          payment_status: string | null
           phone: string
           pin_code: string
+          razorpay_order_id: string | null
+          razorpay_payment_id: string | null
+          razorpay_signature: string | null
           shipping_fee: number
+          shipping_status: string | null
+          shiprocket_order_id: string | null
+          shiprocket_shipment_id: string | null
           state: string
           status: string
           subtotal: number
@@ -143,7 +152,9 @@ export type Database = {
         Insert: {
           address_line1: string
           address_line2?: string | null
+          awb_code?: string | null
           city: string
+          courier_name?: string | null
           created_at?: string
           email: string
           first_name: string
@@ -153,9 +164,16 @@ export type Database = {
           order_number: string
           order_type?: string
           payment_method?: string
+          payment_status?: string | null
           phone: string
           pin_code: string
+          razorpay_order_id?: string | null
+          razorpay_payment_id?: string | null
+          razorpay_signature?: string | null
           shipping_fee?: number
+          shipping_status?: string | null
+          shiprocket_order_id?: string | null
+          shiprocket_shipment_id?: string | null
           state: string
           status?: string
           subtotal: number
@@ -164,7 +182,9 @@ export type Database = {
         Update: {
           address_line1?: string
           address_line2?: string | null
+          awb_code?: string | null
           city?: string
+          courier_name?: string | null
           created_at?: string
           email?: string
           first_name?: string
@@ -174,9 +194,16 @@ export type Database = {
           order_number?: string
           order_type?: string
           payment_method?: string
+          payment_status?: string | null
           phone?: string
           pin_code?: string
+          razorpay_order_id?: string | null
+          razorpay_payment_id?: string | null
+          razorpay_signature?: string | null
           shipping_fee?: number
+          shipping_status?: string | null
+          shiprocket_order_id?: string | null
+          shiprocket_shipment_id?: string | null
           state?: string
           status?: string
           subtotal?: number
